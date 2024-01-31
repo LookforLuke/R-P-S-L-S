@@ -87,11 +87,19 @@ if (userChoice === "scissors") {
     //share results
     compare = uResult - pcResult + 5;
     if (compare % 5 === 0) {
-        console.log(tie);
+        console.log(tie), winner = "Tie!";
     } else if ((compare % 5 + 1) % 2 === 0) {
-        console.log(pc_win);
+        console.log(pc_win), winner = "We win!";
     } else if ((compare % 5) % 2 === 0) {
-        console.log(user_win);
+        console.log(user_win), winner = "You win!";
+    }
+
+    if (winner === "Tie!") {
+        displayWinner(winner)
+    } else if (winner === "We win!") {
+        displayWinner(winner)
+    } else if (winner === "You win!") {
+        displayWinner(winner)
     }
 }   
 
@@ -105,4 +113,9 @@ function determineChoices() {
 function displayChoices(userpick, computerpick) {
     document.getElementById('userpick').textContent = userpick;
     document.getElementById('computerpick').textContent = computerpick;
+}
+
+//show winner
+function displayWinner() {
+    document.getElementById('winner').textContent = winner;
 }
