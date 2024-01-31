@@ -85,14 +85,13 @@ if (userChoice === "scissors") {
     console.log(pcResult);
 
     //share results
-    if (pcResult === uResult) {
+    compare = uResult - pcResult + 5;
+    if (compare % 5 === 0) {
         console.log(tie);
-    } else {
-        if ((uResult + 1) % 5 === pcResult) {
-            console.log(pc_win);
-        } else {
-            console.log(user_win);
-        }
+    } else if ((compare % 5 + 1) % 2 === 0) {
+        console.log(pc_win);
+    } else if ((compare % 5) % 2 === 0) {
+        console.log(user_win);
     }
 }   
 
@@ -106,25 +105,4 @@ function determineChoices() {
 function displayChoices(userpick, computerpick) {
     document.getElementById('userpick').textContent = userpick;
     document.getElementById('computerpick').textContent = computerpick;
-}
-
-
-
-//convert pc to numbers
-function pcNumberConvert(pc_choice_output) {
-    if (pc_choice_output === "rock") {
-        let pcResult = 0;
-    }
-    else if (pc_choice_output === "lizard") {
-        let pcResult = 1;
-    }
-    else if (pc_choice_output === "spock") {
-        let pcResult = 2;
-    }
-    else if (pc_choice_output === "scissors") {
-        let pcResult = 3;
-    }
-    else if (pc_choice_output === "paper") {
-        let pcResult = 4;
-    }
 }
