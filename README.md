@@ -38,3 +38,16 @@ Rock Paper Scissors Lizard Spock is a site which looks to demonstrate the workin
 - I confirmed that all text in each section is easy to read and understand.
 - I tested the results are all correct and shopwing as they should be.
 
+### Bugs
+
+**Solved bugs**
+
+- When initially coding the pcChoice, I noted that it was not logging correctly in the console.  
+- I discovered this was due to incorrect syntax causing an error.
+- once the syntax was corrected, this logged correctly.
+
+- When I created the share results section of the main game function,  I found that the console was logging only tie's or wins.
+- I discovered that this was becasue the inputs were both in text format, but that I was attempting to use modular maths to select the correct outcome.
+- I added a function to convert the user and computer selections to the correctly associated numbers.
+- This solved the issued and the correct outcome was being selected.
+
