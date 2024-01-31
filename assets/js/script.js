@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function runGame(userChoice) {
 //number to choice mapping
-var pc_win, mapping, pcChoice, pc_choice_output, tie, user_win, userChoice, user_choice_output;
+var pc_win, mapping, pcChoice, pc_choice_output, tie, user_win, userChoice;
 mapping = ["rock", "paper", "scissors", "spock", "lizard"];
 
 //generate pc choice
@@ -23,8 +23,8 @@ pc_choice = Math.floor(Math.random() * 5);
 pc_choice_output = mapping[pc_choice];
 
 //confirm choices
-console.log(pc_choice_output);
-console.log(userChoice);
+    console.log(userChoice);
+    console.log(pc_choice_output);
 
 //check user choice section
 if (userChoice === "scissors") {
@@ -41,23 +41,22 @@ if (userChoice === "scissors") {
     alert(`unknown user choice: ${userChoice}`);
         throw `Unknown user choice: ${userChoice}. Aborting`;
 }
-
-//calc results
-    pc_win = "We win!" [mapping[pc_choice], mapping[userChoice]];
-    user_win = "You Win" [mapping[userChoice], mapping[pc_choice]];
+    //calc results
+    pc_win = "We win!";
+    user_win = "You win!";
     tie = "Tie!";
 
-//share results
-    if (pc_choice === userChoice) {
+    //share results
+    if (pc_choice_output === userChoice) {
         console.log(tie);
     } else {
-        if ((userChoice + 1) % 3 === pc_choice) {
+        if ((userChoice + 1) % 3 === pc_choice_output) {
             console.log(pc_win);
         } else {
             console.log(user_win);
         }
-    }    
-}
+    }
+}   
 
 //determine choices
 function determineChoices() {
