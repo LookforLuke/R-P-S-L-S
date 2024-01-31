@@ -1,1 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Global Style*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(37, 33, 61);
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
