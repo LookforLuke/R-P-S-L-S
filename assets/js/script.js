@@ -14,33 +14,33 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function runGame(userChoice) {
-//number to choice mapping
-var pc_win, mapping, pcChoice, pc_choice_output, tie, user_win, userChoice, pcResult, uResult;
-mapping = ["rock", "lizard", "spock", "scissors", "paper"];
+  //number to choice mapping
+  var pc_win, mapping, pcChoice, pc_choice_output, tie, user_win, userChoice, pcResult, uResult;
+  mapping = ["rock", "lizard", "spock", "scissors", "paper"];
 
-//generate pc choice
-pc_choice = Math.floor(Math.random() * 5);
-pc_choice_output = mapping[pc_choice];
+  //generate pc choice
+  pc_choice = Math.floor(Math.random() * 5);
+  pc_choice_output = mapping[pc_choice];
 
-//confirm choices
-    console.log(userChoice);
-    console.log(pc_choice_output);
+  //confirm choices
+  console.log(userChoice);
+  console.log(pc_choice_output);
 
-//check user choice section
-if (userChoice === "scissors") {
+  //check user choice section
+  if (userChoice === "scissors") {
     displayChoices(userChoice, pc_choice_output);
-} else if (userChoice === "paper") {
+  } else if (userChoice === "paper") {
     displayChoices(userChoice, pc_choice_output);
-} else if (userChoice === "rock") {
+  } else if (userChoice === "rock") {
     displayChoices(userChoice, pc_choice_output);
-} else if (userChoice === "lizard") {
+  } else if (userChoice === "lizard") {
     displayChoices(userChoice, pc_choice_output);
-} else if (userChoice === "spock") {
+  } else if (userChoice === "spock") {
     displayChoices(userChoice, pc_choice_output);
-} else {
+  } else {
     alert(`unknown user choice: ${userChoice}`);
         throw `Unknown user choice: ${userChoice}. Aborting`;
-}
+  }
     //calc results
     pc_win = "We win!";
     user_win = "You win!";
