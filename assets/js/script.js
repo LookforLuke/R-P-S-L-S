@@ -28,15 +28,15 @@ console.log(userChoice);
 
 //check user choice section
 if (userChoice === "scissors") {
-    displayResult(userChoice, pc_choice_output);
+    displayChoices(userChoice, pc_choice_output);
 } else if (userChoice === "paper") {
-    displayResult(userChoice, pc_choice_output);
+    displayChoices(userChoice, pc_choice_output);
 } else if (userChoice === "rock") {
-    displayResult(userChoice, pc_choice_output);
+    displayChoices(userChoice, pc_choice_output);
 } else if (userChoice === "lizard") {
-    displayResult(userChoice, pc_choice_output);
+    displayChoices(userChoice, pc_choice_output);
 } else if (userChoice === "spock") {
-    displayResult(userChoice, pc_choice_output);
+    displayChoices(userChoice, pc_choice_output);
 } else {
     alert(`unknown user choice: ${userChoice}`);
         throw `Unknown user choice: ${userChoice}. Aborting`;
@@ -66,7 +66,7 @@ function determineChoices() {
 }
 
 //show choices
-function displayResult(userpick, computerpick) {
+function displayChoices(userpick, computerpick) {
     document.getElementById('userpick').textContent = userpick;
     document.getElementById('computerpick').textContent = computerpick;
 }
