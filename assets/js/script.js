@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function runGame(userChoice) {
 //number to choice mapping
-var pc_win, mapping, pcChoice, pc_choice_output, tie, user_win, userChoice;
+var pc_win, mapping, pcChoice, pc_choice_output, tie, user_win, userChoice, pcResult, uResult;
 mapping = ["rock", "lizard", "spock", "scissors", "paper"];
 
 //generate pc choice
@@ -46,11 +46,49 @@ if (userChoice === "scissors") {
     user_win = "You win!";
     tie = "Tie!";
 
+    //convert user to numbers
+    if (userChoice === "rock") {
+        uResult = "0";
+    }
+    else if (userChoice === "lizard") {
+        uResult = "1";
+    }
+    else if (userChoice === "spock") {
+        uResult = "2";
+    }
+    else if (userChoice === "scissors") {
+        uResult = "3";
+    }
+    else if (userChoice === "paper") {
+        uResult = "4";
+    }
+
+    //convert pc to numbers
+    if (pc_choice_output === "rock") {
+        pcResult = "0";
+    }
+    else if (pc_choice_output === "lizard") {
+        pcResult = "1";
+    }
+    else if (pc_choice_output === "spock") {
+        pcResult = "2";
+    }
+    else if (pc_choice_output === "scissors") {
+        pcResult = "3";
+    }
+    else if (pc_choice_output === "paper") {
+        pcResult = "4";
+    }
+
+    //check convert
+    console.log(uResult);
+    console.log(pcResult);
+
     //share results
-    if (pc_choice_output === userChoice) {
+    if (pcResult === uResult) {
         console.log(tie);
     } else {
-        if ((userChoice + 1) % 5 === pc_choice_output) {
+        if ((uResult + 1) % 5 === pcResult) {
             console.log(pc_win);
         } else {
             console.log(user_win);
@@ -68,4 +106,25 @@ function determineChoices() {
 function displayChoices(userpick, computerpick) {
     document.getElementById('userpick').textContent = userpick;
     document.getElementById('computerpick').textContent = computerpick;
+}
+
+
+
+//convert pc to numbers
+function pcNumberConvert(pc_choice_output) {
+    if (pc_choice_output === "rock") {
+        let pcResult = 0;
+    }
+    else if (pc_choice_output === "lizard") {
+        let pcResult = 1;
+    }
+    else if (pc_choice_output === "spock") {
+        let pcResult = 2;
+    }
+    else if (pc_choice_output === "scissors") {
+        let pcResult = 3;
+    }
+    else if (pc_choice_output === "paper") {
+        let pcResult = 4;
+    }
 }
