@@ -26,3 +26,15 @@ Rock Paper Scissors Lizard Spock is a site which looks to demonstrate the workin
 
 - This area shows the user the results of the match.
 ![](assets/images/Winner.png)
+
+### Features left to implement
+
+- We will look to implement a score board in future, allowing the user to keep track of their record.
+
+## Testing
+
+- I tested that this page works in OperaGX, Chrome and Firefox.
+- I have verified that the project is responsive, functional and looks good on all the standard screen sizes by using the devtools device toolbar.
+- I confirmed that all text in each section is easy to read and understand.
+- I tested the results are all correct and shopwing as they should be.
+
