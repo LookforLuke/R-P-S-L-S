@@ -17,3 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
 var pc_win, mapping, pcChoice, pc_choice_output, tie, user_win, userChoice, user_choice_output;
 mapping = ["rock", "paper", "scissors", "spock", "lizard"];
 
+//generate pc choice
+pc_choice = Math.floor(Math.random() * 5);
+pc_choice_output = "I chose %s." % mapping[pc_choice];
