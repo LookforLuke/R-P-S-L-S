@@ -126,3 +126,30 @@ h1 {
 .blue:hover {
     background-color: blue;
 }
+
+/*Media Queries*/
+@media (max-width: 768px) {
+    .selection-area {
+        padding: 17vh 5vh;
+    }
+}
+
+@media (max-width: 425px) {
+    .selection-area {
+        padding: 11vh 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .game-area {
+        height: 62vh;
+    }
+
+    .selection-area {
+        padding: 1vh 0;
+    }
+
+    .score-area {
+        padding: 0.25vh 2vh;
+    }
+}
