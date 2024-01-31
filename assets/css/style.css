@@ -60,3 +60,14 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
+
+/*Score*/
+.score-area {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: rgb(37, 33, 61);
+    padding: 3vh;
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+}
