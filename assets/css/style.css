@@ -71,3 +71,58 @@ h1 {
     border: 2px solid whitesmoke;
     background-color: whitesmoke;
 }
+
+/*Buttons*/
+.btn--big {
+    border-radius: 50%;
+    border: 11px solid;
+    width: 90px;
+    height: 90px;
+    font-size: 2.2rem;
+    margin: 0 25px;
+}
+
+.red {
+    border-color: rgb(170, 3, 3);
+}
+
+.red:active,
+.red:hover {
+    background-color: red;
+}
+
+.purple {
+    border-color: rgb(107, 54, 145);
+}
+
+.purple:active,
+.purple:hover {
+    background-color: blueviolet;
+}
+
+.teal {
+    border-color: rgb(90, 190, 190);
+}
+
+.teal:active,
+.teal:hover {
+    background-color: turquoise;
+}
+
+.orange {
+    border-color: rgb(233, 183, 91);
+}
+
+.orange:active,
+.orange:hover {
+    background-color: orange;
+}
+
+.blue {
+    border-color: rgb(74, 94, 207);
+}
+
+.blue:active,
+.blue:hover {
+    background-color: blue;
+}
