@@ -51,3 +51,27 @@ Rock Paper Scissors Lizard Spock is a site which looks to demonstrate the workin
 - I added a function to convert the user and computer selections to the correctly associated numbers.
 - This solved the issued and the correct outcome was being selected.
 
+## Validator Testing
+
+- HTML
+  - No errors returned when passing all pages through the official W3C validator
+- CSS
+  - No errors returned when passing through the official Jigsaw Validator
+- JavaScript
+    - No errors returned when passing through the official Jshint validator
+    - the following metrics were returned:
+    - There are 6 functions in this file.
+    - Function with the largest signature take 2 arguments, while the median is 0.
+    - Largest function has 40 statements in it, while the median is 2.5.
+    - The most complex function has a cyclomatic complexity value of 22 while the median is 1.5.
+  
+## Deployment
+
+- The site was deployed to GitHub pages.
+- from the GitHub repository, go to the settings tab
+- from the code and automation section, select pages
+- from the source dropdown section, select deploy from branch
+- from the branch dropdown section, select main branch
+- from here, click save. the page then provides the link to the completed website
+
+the live link can be found here - https://lookforluke.github.io/R-P-S-L-S/
