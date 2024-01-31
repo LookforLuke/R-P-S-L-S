@@ -16,3 +16,19 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/*Heading and logo*/
+h1 {
+    letter-spacing: 3px;
+    font-size: 200%;
+}
+
+#logo {
+    justify-content: space-between;
+    width: 100%;
+    max-width: fit-content;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    flex: auto;
+    margin: auto;
+}
