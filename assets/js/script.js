@@ -12,3 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+//number to choice mapping
+var pc_win, mapping, pcChoice, pc_choice_output, tie, user_win, userChoice, user_choice_output;
+mapping = ["rock", "paper", "scissors", "spock", "lizard"];
+
