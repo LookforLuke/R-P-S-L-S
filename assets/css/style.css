@@ -143,10 +143,11 @@ h1 {
 @media (max-width: 320px) {
     .game-area {
         height: 62vh;
+        border: 0px
     }
 
     .selection-area {
-        padding: 1vh 0;
+        padding: 10vh 0;
     }
 
     .score-area {
