@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function runGame(userChoice) {
 //number to choice mapping
 var pc_win, mapping, pcChoice, pc_choice_output, tie, user_win, userChoice;
-mapping = ["rock", "paper", "scissors", "spock", "lizard"];
+mapping = ["rock", "lizard", "spock", "scissors", "paper"];
 
 //generate pc choice
 pc_choice = Math.floor(Math.random() * 5);
@@ -50,7 +50,7 @@ if (userChoice === "scissors") {
     if (pc_choice_output === userChoice) {
         console.log(tie);
     } else {
-        if ((userChoice + 1) % 3 === pc_choice_output) {
+        if ((userChoice + 1) % 5 === pc_choice_output) {
             console.log(pc_win);
         } else {
             console.log(user_win);
