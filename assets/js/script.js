@@ -41,15 +41,31 @@ if (userChoice === "scissors") {
     alert(`unknown user choice: ${userChoice}`);
         throw `Unknown user choice: ${userChoice}. Aborting`;
 }
+
+//calc results
+    pc_win = "We win!" [mapping[pc_choice], mapping[userChoice]];
+    user_win = "You Win" [mapping[userChoice], mapping[pc_choice]];
+    tie = "Tie!";
+
+//share results
+    if (pc_choice === userChoice) {
+        console.log(tie);
+    } else {
+        if ((userChoice + 1) % 3 === pc_choice) {
+            console.log(pc_win);
+        } else {
+            console.log(user_win);
+        }
+    }    
 }
 
-//display choices
+//determine choices
 function determineChoices() {
     let userpick = parseInt(document.getElementById('userpick').innerText);
     let computerpick = parseInt(document.getElementById('computerpick').innerText);
 }
 
-//display Results
+//show choices
 function displayResult(userpick, computerpick) {
     document.getElementById('userpick').textContent = userpick;
     document.getElementById('computerpick').textContent = computerpick;
